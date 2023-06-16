@@ -10,10 +10,15 @@ app.get('/' , (req, res)=>{
 
 
 
-app.listen(3500, ()=>{
-    console.log('Node API is running on port 3500' )
+app.listen(3000, ()=>{
+    console.log("Node API is running on port 3000" )
 
 })
+const port = 4000; // Change the port number to an available port
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
 
 
 
