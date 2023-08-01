@@ -1,0 +1,49 @@
+/* Custom styles for bigger and longer fields */
+/* Custom styles for bigger and longer fields */
+.text-field {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.text-area {
+  width: 50%;
+  margin-bottom: 1rem;
+  resize: vertical; /* Allow vertical resizing for multiline textareas */
+}
+
+.form-container {
+  background-color: #030000;
+  /* color: #fff; */
+  padding: 20px;
+}
+
+.text-field,
+.text-area {
+  /* background-color: #fff; */
+  color: #222;
+}
+
+.form-control-label {
+  color: #fff;
+}
+
+.select-label {
+  color: #fff;
+}
+
+.select {
+  color: #222;
+  /* background-color: #fff; */
+  &:before {
+    border-color: #020101;
+  }
+}
+
+.button {
+  background-color: #fff;
+  color: #222;
+}
+.app-container {
+  /* background-image:url(src/pages/components-overview/background.webp); */
+   background-color: rgba(232, 229, 229, 0.912); 
+}

@@ -93,11 +93,11 @@ const SalesColumnChart = () => {
 
   const [series] = useState([
     {
-      name: 'Pending',
+      name: 'Net Profit',
       data: [180, 90, 135, 114, 120, 145]
     },
     {
-      name: 'Restored',
+      name: 'Revenue',
       data: [120, 45, 78, 150, 168, 99]
     }
   ]);

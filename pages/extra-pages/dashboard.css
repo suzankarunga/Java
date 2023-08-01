@@ -1,0 +1,45 @@
+/* Custom styles for bigger and longer fields */
+/* Custom styles for bigger and longer fields */
+.text-field {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.text-area {
+  width: 50%;
+  margin-bottom: 1rem;
+  resize: vertical; /* Allow vertical resizing for multiline textareas */
+}
+
+.form-container {
+  background-color: #222;
+  /* color: #fff; */
+  padding: 20px;
+}
+
+.text-field,
+.text-area {
+  /* background-color: #fff; */
+  color: #222;
+}
+
+.form-control-label {
+  color: #fff;
+}
+
+.select-label {
+  color: #fff;
+}
+
+.select {
+  color: #222;
+  /* background-color: #fff; */
+  &:before {
+    border-color: #fff;
+  }
+}
+
+.button {
+  background-color: #fff;
+  color: #222;
+}
