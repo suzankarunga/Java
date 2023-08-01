@@ -15,11 +15,11 @@ const LoginRoutes = {
   element: <MinimalLayout />,
   children: [
     {
-      path: 'Incident login',
+      path: 'login',
       element: <AuthLogin />
     },
     {
-      path: ' Incident register',
+      path: 'register',
       element: <AuthRegister />
     }
   ]

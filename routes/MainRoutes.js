@@ -8,13 +8,10 @@ import MainLayout from 'layout/MainLayout';
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 
 // render - sample page
-const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
+const IncidentPage = Loadable(lazy(() => import('pages/extra-pages/IncidentPage')));
 
 // render - utilities
-const Typography = Loadable(lazy(() => import('pages/components-overview/Typography')));
-const Color = Loadable(lazy(() => import('pages/components-overview/Color')));
-const Shadow = Loadable(lazy(() => import('pages/components-overview/Shadow')));
-const AntIcons = Loadable(lazy(() => import('pages/components-overview/AntIcons')));
+const Insert = Loadable(lazy(() => import('pages/components-overview/Insert')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -26,10 +23,7 @@ const MainRoutes = {
       path: '/',
       element: <DashboardDefault />
     },
-    {
-      path: 'color',
-      element: <Color />
-    },
+
     {
       path: 'dashboard',
       children: [
@@ -40,20 +34,13 @@ const MainRoutes = {
       ]
     },
     {
-      path: 'sample-page',
-      element: <SamplePage />
+      path: 'incident-page',
+      element: <IncidentPage />
     },
+
     {
-      path: 'shadow',
-      element: <Shadow />
-    },
-    {
-      path: 'typography',
-      element: <Typography />
-    },
-    {
-      path: 'icons/ant',
-      element: <AntIcons />
+      path: 'insert',
+      element: <Insert />
     }
   ]
 };
