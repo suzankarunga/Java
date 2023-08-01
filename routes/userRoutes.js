@@ -1,38 +1,24 @@
-const { authJwt } = require("../middleware");
-const controller = require("../controllers/user_controller");
-const express = require("express");
+// app/routes/userRoutes.js
+
+const express = require('express');
 const router = express.Router();
+const userController = require('../controllers/userControllers');
 
-module.exports = function(app) {
-  router.use(function(req, res, next) {
-    res.header(
-      "Access-Control-Allow-Headers",
-      "x-access-token, Origin, Content-Type, Accept"
-    );
-    next();
-  });
+// Create a new user
+router.post('/', userController.createUser);
 
-  router.get("/api/test/all", controller.allAccess);
+// Get all users
+router.get('/', userController.getUsers);
 
-  router.get("/api/test/user", [authJwt.verifyToken], controller.userBoard);
+// Get a user by ID
+// router.get('/:id', userController.getUserById);
 
-  router.get(
-    "/api/test/mod",
-    [authJwt.verifyToken, authJwt.isModerator],
-    controller.moderatorBoard
-  );
+router.post('/api/auth/signin', userController.signInUser);
 
-  router.get(
-    "/api/test/admin",
-    [authJwt.verifyToken, authJwt.isAdmin],
-    controller.adminBoard
-  );
-};
+// Update a user
+router.put('/api/user/update-user',userController.authenticateToken, userController.updateUser);
 
-// Define your routes here
-router.get("/", (req, res) => {
-  res.send("User routes");
-});
+// Delete a user
+router.delete('/api/user/delete-user',userController.authenticateToken, userController.deleteUser);
 
-// Export the router
 module.exports = router;
