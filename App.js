@@ -8,7 +8,9 @@ import ScrollTop from 'components/ScrollTop';
 const App = () => (
   <ThemeCustomization>
     <ScrollTop>
-      <Routes />
+      <div className="app-container">
+        <Routes />
+      </div>
     </ScrollTop>
   </ThemeCustomization>
 );
