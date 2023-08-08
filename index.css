@@ -1,0 +1,95 @@
+h3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+hr{
+  width: 90%;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li{
+list-style-type: none;
+padding: 10px;
+margin:5px 0px 5px 0px;
+background-color: rgb(231, 211, 184);
+}
+li:hover{
+  background-color:rgb(159, 199, 236);
+}
+.logo{
+  background-color: blue;
+  color:#ffff;
+  margin: 0 ;
+}
+.nav{
+  background: rgb(238, 236, 236);
+}
+.view{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+table{
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+
+}
+td{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+}
+.edit{
+  background-color: rgb(255, 187, 0);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.add{
+  background-color: rgb(3, 114, 30);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 20px 10px;
+
+}
+.addtext{
+  padding: 10px;
+  color:white;
+  text-decoration: none;
+}
+.links{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.main{
+  display:grid;
+  grid-template-columns: 10% auto;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+table{
+  width:100%
+}
+th,td{
+  border-bottom: 1px solid black;
+}
+
